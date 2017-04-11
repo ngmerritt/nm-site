@@ -2,17 +2,19 @@ jQuery(document).ready(function($) {
 
   // SMOOTH SCROLLING
 
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 800);
-        return false;
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
       }
-    }
+    });
   });
 
   // STICKY NAV
@@ -28,7 +30,7 @@ jQuery(document).ready(function($) {
     } else {
       nav.removeClass("nav-sticky");
       logo.removeClass("logo-sticky");
-    }
+    };
   });
 
   // WORK SLIDER
@@ -37,15 +39,16 @@ jQuery(document).ready(function($) {
       back = $(".back-arrow"),
       slide = $(".work-slider"),
       cs = $(".work-content");
+      // position = $(".work-slider").css("left");
 
     
     thumb.click(function() {
-      slide.css("left", "-100%");
+      slide.addClass('work-slidden');
       cs.show();
     });
 
     back.click(function() {
-      slide.css("left", "0%");
+      slide.removeClass('work-slidden');
       cs.hide(600);
     });
 
@@ -399,10 +402,19 @@ jQuery(document).ready(function($) {
       var $this = $(this),
           newTitle = $this.find('span').text(),
           spinner = '<div class="loader">Loading...</div>',
-          url = $this.data('url');
+          url = $this.data('url'),
+          projectNumber = url.match(/[\d]+$/);
 
-      $('.project-load').html(spinner).load(url);
+      alert(url);
+
+      $('.project-load').html(spinner).load(url + ".html");
       $('.project-title').text(newTitle);
     });
+
+  // $(function() {
+  //   $('.project-load').html(spinner).load(nextProject);
+  //   $('.project-title').text(newTitle);
+  // });
+
 
 });//END DOCUMENT READY

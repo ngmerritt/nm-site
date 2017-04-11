@@ -170,7 +170,7 @@ nav {
 .nav-sticky {
   position: fixed;
   top: 0;
-  background: rgba(21,21,23,0.8);
+  background: rgba(28, 17, 35, 0.9);
   height: 80px;
   padding: 20px 30px;
 }
@@ -440,6 +440,10 @@ section#about h2 {
   transition-duration: 0.5s;
 }
 
+.work-slidden {
+  left: -100%;
+}
+
 .work-wrap {
   width: 50%;
   float: left;
@@ -676,6 +680,26 @@ span.visit-site a:hover {
   color: rgba(217, 95, 39, 1);
 }
 
+.next-project-btn {
+  width: 100%;
+  display: block;
+  background: rgba(217, 95, 39, 0.9);
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Teko', sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  padding: 20px 30px;
+  margin-top: 15px;
+  padding: 35px 10px;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
+  text-transform: uppercase;
+}
+
+.next-project-btn:hover {
+  background: rgba(217, 95, 39, 0.7);
+}
+
 /*SKILLS*/
 
 .skills {
@@ -828,7 +852,7 @@ textarea {
 }
 .form-control:focus {
   box-shadow: none;
-  border-color: rgba(55, 34, 73, 1);
+  border-color: #fff;
 }
 .js-hide-label {
   opacity: 0;   
@@ -848,6 +872,7 @@ textarea {
   text-transform: uppercase;
   transition: all 0.25s ease 0s;
   width: 100%;
+  cursor: pointer;
 }
 .btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
   background: rgba(55, 34, 73, 1);
@@ -1224,6 +1249,16 @@ textarea {
   }
   .project-load span#roles {
     font-size: 13px;
+  }
+  .form-label {
+    font-size: 15px;
+  }
+  .form-wrap input, .form-wrap textarea {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .btn-start-order {
+    font-size: 20px;
   }
 }
 
