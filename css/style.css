@@ -604,6 +604,13 @@ section#about h2 {
   left: 50px;
 }
 
+.project-load {
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
 .project-load span#roles {
   display: block;
   text-align: center;

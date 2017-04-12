@@ -400,21 +400,27 @@ jQuery(document).ready(function($) {
 
     $('.thumb').click(function() {
       var $this = $(this),
-          newTitle = $this.find('span').text(),
           spinner = '<div class="loader">Loading...</div>',
           url = $this.data('url'),
-          projectNumber = url.match(/[\d]+$/);
+          projectNumber = url.match(/[\d]+$/),
+          current = parseInt(projectNumber, 10);
 
-      alert(url);
+      nextProject = current;
 
       $('.project-load').html(spinner).load(url + ".html");
-      $('.project-title').text(newTitle);
-    });
 
-  // $(function() {
-  //   $('.project-load').html(spinner).load(nextProject);
-  //   $('.project-title').text(newTitle);
-  // });
+    });   
+
+    $('a.next-project-btn').click(function() {
+      var current = nextProject;
+      nextProject++;
+
+      if (nextProject > 10) {
+        nextProject = 1;
+      }
+
+      $('.project-load').html('<div class="loader">Loading...</div>').load("work/project-" + nextProject + ".html");
+    });
 
 
 });//END DOCUMENT READY
