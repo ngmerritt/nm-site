@@ -415,7 +415,7 @@ jQuery(document).ready(function($) {
       var current = nextProject;
       nextProject++;
 
-      if (nextProject > 10) {
+      if (nextProject > 8) {
         nextProject = 1;
       }
 

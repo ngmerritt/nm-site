@@ -985,7 +985,7 @@ textarea {
 .loader {
   color: #ffffff;
   font-size: 10px;
-  margin: 160px auto 0;
+  margin: 160px auto;
   position: relative;
   text-indent: -9999em;
   -webkit-transform: translateZ(0);
