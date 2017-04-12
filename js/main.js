@@ -409,7 +409,9 @@ jQuery(document).ready(function($) {
 
       $('.project-load').html(spinner).load(url + ".html");
 
-    });   
+    });
+
+    // NEXT PROJECT BUTTON
 
     $('a.next-project-btn').click(function() {
       var current = nextProject;
@@ -421,6 +423,5 @@ jQuery(document).ready(function($) {
 
       $('.project-load').html('<div class="loader">Loading...</div>').load("work/project-" + nextProject + ".html");
     });
-
 
 });//END DOCUMENT READY
