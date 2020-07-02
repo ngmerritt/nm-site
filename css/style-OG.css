@@ -113,11 +113,11 @@ p {
 }
 p a {
   text-transform: none;
-  color: #DB6127;
+  color: #fb9767;
 }
 
 p a:hover {
-  color: #ea8e61;
+  color: #DB6127;
 }
 
 img {
