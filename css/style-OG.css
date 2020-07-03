@@ -104,6 +104,12 @@ h3 {
   text-align: left;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.8);
 }
+h3 span.sub {
+  font-size: 50%;
+  font-family: inherit;
+  opacity: 0.5;
+  font-weight: 500;
+}
 p {
   text-align: left;
   text-transform: none;
@@ -653,7 +659,7 @@ section#about h2 {
 }
 
 .profile-pic {
-  width: 35%;
+  width: 30%;
   padding-top: 35%;
   background: url(../img/nick-profile2.jpg) no-repeat;
   background-size: cover;
@@ -664,7 +670,7 @@ section#about h2 {
 }
 
 .profile-text {
-  width: 60%;
+  width: 65%;
   flex: 0 1 auto;
 }
 
@@ -753,13 +759,13 @@ ul.new-skills li {
 ul.new-skills li:before {
   content: "";
   width: 7px;
-  height: 4px;
+  height: 7px;
   border: 1px solid rgba(255,255,255, 0.5);
   background: rgba(217, 95, 39, 1);
-  transform: skew(-45deg);
+  /* transform: skew(-45deg); */
   position: absolute;
-  left: -27px;
-  top: 40%;
+  left: -25px;
+  top: 10px;
 }
 
 .skills-left, .skills-right {
