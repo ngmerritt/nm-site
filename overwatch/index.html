@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="https://overwatch-a.akamaihd.net/img/favicon-bb6200267bbdea6fdc9eb498a88722007dad6eb3b3c6437440025c66cb055fefdd1fbedf3886bd069fc3547c79fa8afee4795a278a644f6cfe10a7b1144f48bb.ico">
+    <title>Nick Merritt - Heroes - Overwatch</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="TODO default?">
+    <meta property="og:image" content="https://blzgdapipro-a.akamaihd.net/hero/tracer/icon-portrait.png">
+    <meta property="og:image" content="https://overwatch-a.akamaihd.net/img/logos/og-overwatch-3dcd807afe88b1a453e6cfc493ea73b3f687a12e68750d489685878ec481a925708d05c8547f1aaaac600889c418f5ec6f673362ad8b161b27df0fa58d52ef09.jpg">
+    <meta property="og:title" content="Nick - Overwatch">
+    <meta property="og:description" content="Nick is just a regular dude with a passion for games.">
+    <link rel="stylesheet" href="https://overwatch-a.akamaihd.net/blizzard-64a40d8aac0ae1429c73ccd926351ca2578aa1974bb33ee08b0fc805497824af22c44136bfd0951a3823a19e887c926506cf22cb309b68fa937c0655c7553130.css" type="text/css">
+    <link rel="stylesheet" href="https://overwatch-a.akamaihd.net/app-e8342a261ebae38fc697048e74cd558dbd9c7e79b0031c3272f89e6d95cce3a4f15c23570387303f37ab693e759bf8118dc73adcff876679a6c78f8d0de3e88c.css" type="text/css">
+    <style>
+        .hero-detail-background {
+            background-image: url(/img/background-story-nick.jpg);
+            background-color: rgb(16, 46, 86);
+        }
+        .social-icon-website {
+            width: 57px;
+            height: 54px;
+            display: inline-block;
+            background-image: url(img/new-social-icons.png);
+            background-size: cover;
+            background-position: -73px;
+        }
+        .social-icon-linkedin {
+            width: 57px;
+            height: 54px;
+            display: inline-block;
+            background-image: url(img/new-social-icons.png);
+            background-size: cover;
+            background-position: -146px 0;
+        }
+        .social-icon-dribbble {
+            width: 57px;
+            height: 54px;
+            display: inline-block;
+            background-image: url(img/new-social-icons.png);
+            background-size: cover;
+            background-position: -219px 0;
+        }
+        .social-icon-dribbble:hover,
+        .social-icon-linkedin:hover,
+        .social-icon-website:hover
+        {
+            background-image: url(img/new-social-icons-hover.png);
+        }
+
+        .design-icon {
+            background-image: url(img/role-icon-design.png);
+            background-size: 24px 24px;
+        }
+
+        .ability-name {
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, .7);
+        }
+
+        .ability-showcase .ability-showcase-button {
+            position: relative;
+            width: 5vw;
+            height: 5vw;
+            cursor: pointer;
+        }
+
+        /*TOOLTIP*/
+    
+        .tooltip{
+            display: inline;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip:hover:after{
+            background: #fff;
+            border-radius: 5px;
+            bottom: 125px;
+            color: #000;
+            line-height: 1.25em;
+            content: attr(title);
+            left: -70%;
+            padding: 10px 15px;
+            position: absolute;
+            z-index: 98;
+            width: 220px;
+            -webkit-transform: skew(-.25rad);
+            -ms-transform: skew(-.25rad);
+            transform: skew(-.25rad);
+        }
+        
+        .tooltip:hover:before{
+            border: solid;
+            border-color: #fff transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 120px;
+            content: "";
+            left: 60%;
+            position: absolute;
+            z-index: 99;
+        }
+        .ability-showcase-video {
+            max-width: 100%;
+            top: -10%;
+        }
+        .ability-showcase {
+            padding-bottom: 46vw;
+        }
+
+    @media only screen and (max-width: 767px) {
+        .tooltip:hover:after {
+            left: -80%;
+        }
+
+        .tooltip:hover:before {
+            left: 43%;
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        .hero-detail-tabs {
+            padding-bottom: 50px;
+        }
+    }
+    
+    </style>
+    <script>
+        var clientVars = {
+            "language": "en",
+            "urlLocale": "en-us",
+            "locale": "en_US",
+            "loggedIn": false,
+            "region": "us",
+            "serverRegion": "us"
+        };
+
+        window.blizzard = window.blizzard || {};
+        Object.keys(clientVars).forEach(function(key) {
+            window.blizzard[key] = clientVars[key];
+        });
+    </script>
+</head>
+
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="hero-detail-page en-us">
+    <script>
+        var dataLayer = dataLayer || [];
+        dataLayer.push({
+            "locale": "en-US",
+            "region": "us",
+            "project": "overwatch",
+            "authenticated": "0",
+            "localeRegion": "us"
+        });
+    </script>
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TT34VR" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TT34VR');
+    </script>
+    <script>
+        ! function(i, d, e, n) {
+            i[e] = i[e] || {}, i[e][n] || (i[e][n] = function(i, e, n) {
+                if (void 0 !== i) {
+                    e = void 0 === e ? 0 : e, n = void 0 === n ? 0 : n;
+                    var a = d.createElement("iframe");
+                    a.width = e, a.height = n, a.hidden = !0, a.src = i, d.body.appendChild(a)
+                }
+            })
+        }(window, document, "analytics", "appendFrame");
+    </script>
+    <div class="navbars">
+        <div id="nav-client-header" class="nav-client mobileEnabled compact">
+            <!--[if !IE|(gt IE 8)]> <!-->
+            <div class="nav-mobile-menubar">
+                <div class="nav-hamburger-menu-icon"></div>
+                <div class="nav-mobile-menu-title"></div>
+                <div class="nav-global-menu-icon"></div>
+                <div class="nav-notification-icon"><a rel="navbar" class="dropdown-toggle needsclick nav-item"><i class="needsclick nav-icon-bell"></i></a>
+                    <div class="nav-notification-dropdown dropdown-menu">
+                        <div class="arrow top"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-mobile-menu-wrap right">
+                <div class="menu-relative-wrap">
+                    <div class="menu-header global-menu">
+                        <div class="nav-remove-icon-wrap">
+                            <div class="nav-remove-icon"></div>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <div id="user-account" class="nav-box"><a href="http://nick-merritt.com/Nick-Merritt-RESUME-2016.pdf" target="_blank" class="nav-btn nav-btn-block nav-login-btn nav-item" id="" title="" rel="" data-analytics="global-nav" data-analytics-placement="Nav - Account - Log In"><span>Résumé</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-mobile-menu-wrap left">
+                <div class="menu-relative-wrap"></div>
+            </div>
+            <div id="nav-blackout" style="display:none"></div>
+            <!--<![endif]-->
+            <div class="nav-notification-responsive-container">
+                <div class="nav-notification-dropdown dropdown-menu">
+                    <div class="arrow top"></div>
+                </div>
+            </div>
+        </div>
+        <nav role="main">
+            <div class="nav-section">
+                <div class="nav-carbon">
+                    <div slide-menu-open="mobile" class="nav-burger"><span></span><span></span><span></span></div>
+                    <a href="#" data-analytics="overwatch-nav" data-analytics-placement="home" class="nav-logo"></a>
+                </div>
+            </div>
+            <div class="nav-section m-fillSpace">
+                <ul class="nav-menu">
+                    <li><a href="http://nick-merritt.com/#about" target="_blank" class="nav-btn">About</a></li>
+                    <li><a href="http://nick-merritt.com/#work" target="_blank" class="nav-btn">Portfolio</a></li>
+                    <li><a href="http://nick-merritt.com/#contact" target="_blank" class="nav-btn">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-section">
+                <div class="nav-btn m-noPad m-dark show-for-md"><a href="http://nick-merritt.com/Nick-Merritt-RESUME-2016.pdf" target="_blank" class="nav-btn m-dark m-small">Résumé</a></div><a href="http://nick-merritt.com/#contact/" target="_blank" class="nav-btn m-orange show-for-md">Hire Me</a></div>
+            <div class="nav-border"></div>
+        </nav>
+    </div>
+    <nav role="mobile" slide-menu="mobile" class="slide-menu">
+        <div class="close">&times;</div>
+        <div class="inner">
+            <div class="content">
+                <a close href="#" data-analytics="overwatch-nav" data-analytics-placement="home" class="nav-logo m-icon"></a>
+                <ul class="nav-menu">
+                    <li><a href="http://nick-merritt.com/#about" target="_blank" close class="nav-btn" data-analytics="overwatch-nav" data-analytics-placement="game">About</a></li>
+                    <li><a href="http://nick-merritt.com/#work" target="_blank" close class="nav-btn" data-analytics="overwatch-nav" data-analytics-placement="heroes">Portfolio</a></li>
+                    <li></li>
+                </ul>
+                <div class="nav-btn m-noPad"><a href="http://nick-merritt.com/Nick-Merritt-RESUME-2016.pdf" target="_blank" class="nav-btn m-dark">Résumé</a></div><a href="http://nick-merritt.com/#contact/" target="_blank" data-analytics="overwatch-buy" data-analytics-placement="Top" class="nav-btn m-orange m-center">Hire Me</a></div>
+        </div>
+    </nav>
+    <section id="abilities" class="show-for-lg">
+        <div class="ability-showcase">
+            <video muted="muted" preload="none" class="ability-showcase-video">
+                <source type="video/webm" src="/videos/nick-lowres.WebM" />
+                <source type="video/mp4" src="/videos/nick-lowres.mp4" />
+            </video>
+            <video muted="muted" poster="/img/team-player-th.jpg" preload="none" class="ability-showcase-video">
+                <source type="video/webm" src="/videos/team-player-lowres.WebM" />
+                <source type="video/mp4" src="/videos/team-player-lowres.mp4" />
+            </video>
+            <video muted="muted" poster="/img/sponge-th.jpg" preload="none" class="ability-showcase-video">
+                <source type="video/webm" src="/videos/sponge-lowres.WebM" />
+                <source type="video/mp4" src="/videos/sponge-lowres.mp4" />
+            </video>
+            <video muted="muted" poster="/img/time-travel-th.jpg" preload="none" class="ability-showcase-video">
+                <source type="video/webm" src="/videos/time-travel-lowres.WebM" />
+                <source type="video/mp4" src="/videos/time-travel-lowres.mp4" />
+            </video>
+            <video muted="muted" poster="https://blzgdapipro-a.akamaihd.net/hero/tracer/ability-pulse-bomb/thumb-ability.jpg" preload="none" class="ability-showcase-video">
+                <source type="video/webm" src="/videos/gamer-lowres.WebM" />
+                <source type="video/mp4" src="/videos/gamer-lowres.mp4" />
+            </video>
+            <div class="page-wrapper">
+                <div class="row">
+                    <div class="xs-12-12">
+                        <div class="ability-showcase-controls">
+                            <h1 class="hero-name">Nick Merritt</h1>
+                            <h4 class="ability-name"></h4>
+                            <ul class="ability-button-list">
+                                <li>
+                                    <div data-ability-name="&nbsp;" class="ability-showcase-button center center_element u-align-center">
+                                        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg">
+                                            <circle cx="50" cy="50" r="50"></circle>
+                                        </svg>
+                                        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg">
+                                            <circle cx="50" cy="50" r="50"></circle>
+                                        </svg><img src="/img/nick-face2.png" class="hero-ability-icon m-hoverable center_element" style="max-height: 73%;" /></div>
+                                </li>
+                                <li>
+                                    <div data-ability-name="Team Player" class="ability-showcase-button center center_element u-align-center">
+                                        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg">
+                                            <circle cx="50" cy="50" r="50"></circle>
+                                        </svg>
+                                        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg">
+                                            <circle cx="50" cy="50" r="50"></circle>
+                                        </svg><img src="/img/team-player-ability.png" class="hero-ability-icon m-hoverable center_element" style="max-height: 55%;" /></div>
+                                </li>
+                                <li>
+                                    <div data-ability-name="Super Absorption" class="ability-showcase-button center center_element u-align-center">
+                                        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg">
+                                            <circle cx="50" cy="50" r="50"></circle>
+                                        </svg>
+                                        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg">
+                                            <circle cx="50" cy="50" r="50"></circle>
+                                        </svg><img src="/img/sponge-ability.png" class="hero-ability-icon m-hoverable center_element" /></div>
+                                </li>
+                                <li>
+                                    <div data-ability-name="Time Travel" class="ability-showcase-button center center_element u-align-center">
+                                        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg">
+                                            <circle cx="50" cy="50" r="50"></circle>
+                                        </svg>
+                                        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg">
+                                            <circle cx="50" cy="50" r="50"></circle>
+                                        </svg><img src="/img/time-travel-ability.png" class="hero-ability-icon m-hoverable center_element" style=" left: 51%; top: 49%;" /></div>
+                                </li>
+                                <li>
+                                    <div data-ability-name="Gamer" class="ability-showcase-button center center_element u-align-center">
+                                        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg">
+                                            <circle cx="50" cy="50" r="50"></circle>
+                                        </svg>
+                                        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg">
+                                            <circle cx="50" cy="50" r="50"></circle>
+                                        </svg><img src="/img/gamer-ability.png" class="hero-ability-icon m-hoverable center_element" style="top: 49%; max-height: 69%;" /></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="details" class="hero-detail section-divider m-wings m-top-only outter">
+        <div class="hero-detail-background"></div>
+        <div class="hero-detail-video video-background-wrapper is-active">
+            <div class="video-background-vid m-right-align m-blend">
+                <video autoplay loop muted>
+                    <source src="/videos/idle-video-bg-nick.WebM" type="video/webm">
+                    <source src="/videos/idle-video-bg-nick.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="inner">
+            <div class="row hide-for-lg m-nav-pad hero-portrat-mobile bg-petals">
+                <div class="column sm-12 content-box">
+                    <h1 class="hero-name">Nick Merritt</h1><img src="/img/full-portrait.png" class="hero-image"></div>
+            </div>
+            <div class="row hero-detail-tabs">
+                <div id="tabs" class="column sm-12 lg-6 no-gutters">
+                    <ul id="details-tabs" data-tabs="" role="tablist" class="tabs">
+                        <li role="presentation" class="tabs-title is-active"><a href="#overview" aria-selected="true" class="h4">Overview</a></li>
+                        <li role="presentation" class="tabs-title" style="margin-left: 0.25%;"><a href="#story" data-story-bg="https://blzgdapipro-a.akamaihd.net/hero/tracer/background-story-mobile.jpg" data-story-bg-color="rgb(16, 46, 86)" class="h4">Story</a></li>
+                    </ul>
+                    <div data-tabs-content="details-tabs" class="tabs-content">
+                        <section id="overview" class="tabs-panel is-active">
+                            <div class="hero-detail-wrapper">
+                                <div class="row">
+                                    <div class="column sm-12 md-6 hero-detail-role">
+                                        <h3 class="h4 hero-detail-title">Role</h3>
+                                        <h4 class="h2 hero-detail-role-name">Design</h4>
+                                        <div class="design-icon hero-detail-role-icon"></div>
+                                    </div>
+                                    <div class="column sm-12 md-6">
+                                        <div class="hero-detail-difficulty">
+                                            <h3 class="h4 hero-detail-title">Difficulty</h3><span class="star"></span><span class="star"></span><span class="star"></span></div>
+                                    </div>
+                                </div>
+                                <p class="hero-detail-description">With the help of his trusty laptop, a quick wit, and a decade worth of experience, Nick uses his powers to right wrongs all across the design world.  </p>
+                            </div>
+                            <hr class="tab-separator">
+                            <div class="hero-detail-wrapper m-same-pad">
+                                <h3 class="h4 hero-detail-title">Abilities</h3>
+                                <div class="hero-detail-abilities"></div>
+                                <div class="hero-ability">
+                                    <div class="hero-ability-icon-container">
+                                        <div class="hero-ability-icon-bg m-small"><img src="/img/team-player-ability.png" class="hero-ability-icon m-weapon"></div>
+                                    </div>
+                                    <div class="hero-ability-descriptor">
+                                        <h4 class="h5">Team Player</h4>
+                                        <p>Nick excels as part of a team. His flexibility allows him to work in a support role or lead the charge against his arch nemesis, Deadline.</p>
+                                    </div>
+                                    <video controls preload="none" poster="/img/team-player-th.jpg" class="hero-ability-video">
+                                        <source src="/videos/team-player-lowres.WebM">
+                                        <source src="/videos/team-player-lowres.mp4">
+                                    </video>
+                                </div>
+                                <div class="hero-ability">
+                                    <div class="hero-ability-icon-container">
+                                        <div class="hero-ability-icon-bg m-small"><img src="/img/sponge-ability.png" class="hero-ability-icon"></div>
+                                    </div>
+                                    <div class="hero-ability-descriptor">
+                                        <h4 class="h5">Super Absorption</h4>
+                                        <p>Nick is like a sponge, and not just because of his squishy exterior. He has the ability to absorb any amount of information thrown at him and convert it into new skills.</p>
+                                    </div>
+                                    <video controls preload="none" poster="/img/sponge-th.jpg" class="hero-ability-video">
+                                        <source src="/videos/sponge-lowres.WebM" type="video/webm">
+                                        <source src="/videos/sponge-lowres.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="hero-ability">
+                                    <div class="hero-ability-icon-container">
+                                        <div class="hero-ability-icon-bg m-small"><img src="/img/time-travel-ability.png" class="hero-ability-icon" style="top: 49%; left: 51%;"></div>
+                                    </div>
+                                    <div class="hero-ability-descriptor">
+                                        <h4 class="h5">Time Travel</h4>
+                                        <p>At a young age, Nick discovered he has the power to slowly travel forward through time.</p>
+                                    </div>
+                                    <video controls preload="none" poster="/img/time-travel-th.jpg" class="hero-ability-video">
+                                        <source src="/videos/time-travel-lowres.WebM">
+                                        <source src="/videos/time-travel-lowres.mp4">
+                                    </video>
+                                </div>
+                                <div class="hero-ability">
+                                    <div class="hero-ability-icon-container">
+                                        <div class="hero-ability-icon-bg m-small"><img src="/img/gamer-ability.png" class="hero-ability-icon"></div>
+                                    </div>
+                                    <div class="hero-ability-descriptor">
+                                        <h4 class="h5">Gamer</h4>
+                                        <p>Nick lives and breathes games. They are already his passion and his pastime. He would give anything to make them his profession.</p>
+                                    </div>
+                                    <video controls preload="none" poster="/img/gamer-th.jpg" class="hero-ability-video">
+                                        <source src="/videos/gamer-lowres.WebM" type="video/webm">
+                                        <source src="/videos/gamer-lowres.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="story" class="tabs-panel">
+                            <div class="hero-detail-wrapper m-no-pad-bot">
+                                <h3 class="h4 hero-detail-title">Biography</h3>
+                                <ul class="hero-bio">
+                                    <li class="name">
+                                        <svg viewbox="0 0 32 32" role="presentation" class="icon hero-bio-icon">
+                                            <use xlink:href="https://overwatch-a.akamaihd.net/svg/hero/hero-bio-sprite-751fbcc2a9d624d2be9aedd92e373c340c5a9613ef609655d1504fb616b72d358a4b8088b252e84d5509615140f004d6332431a104ad2ed2883c0f35222b594e.svg#namecard"></use>
+                                        </svg><span class="hero-bio-copy">Real Name: Nick Merritt, Age: 30</span></li>
+                                    <li class="occupation">
+                                        <svg viewbox="0 0 32 32" role="presentation" class="icon hero-bio-icon">
+                                            <use xlink:href="https://overwatch-a.akamaihd.net/svg/hero/hero-bio-sprite-751fbcc2a9d624d2be9aedd92e373c340c5a9613ef609655d1504fb616b72d358a4b8088b252e84d5509615140f004d6332431a104ad2ed2883c0f35222b594e.svg#luggage"></use>
+                                        </svg><span class="hero-bio-copy">Occupation: Pixel Pusher</span></li>
+                                    <li class="base">
+                                        <svg viewbox="0 0 32 32" role="presentation" class="icon hero-bio-icon">
+                                            <use xlink:href="https://overwatch-a.akamaihd.net/svg/hero/hero-bio-sprite-751fbcc2a9d624d2be9aedd92e373c340c5a9613ef609655d1504fb616b72d358a4b8088b252e84d5509615140f004d6332431a104ad2ed2883c0f35222b594e.svg#world"></use>
+                                        </svg><span class="hero-bio-copy">Base of Operations: Irvine, California</span></li>
+                                    <li class="affiliation">
+                                        <svg viewbox="0 0 32 32" role="presentation" class="icon hero-bio-icon">
+                                            <use xlink:href="https://overwatch-a.akamaihd.net/svg/hero/hero-bio-sprite-751fbcc2a9d624d2be9aedd92e373c340c5a9613ef609655d1504fb616b72d358a4b8088b252e84d5509615140f004d6332431a104ad2ed2883c0f35222b594e.svg#shield"></use>
+                                        </svg><span class="hero-bio-copy">Affiliation: Blizzard (hopefully)</span></li>
+                                </ul>
+                            </div>
+                            <div class="hero-detail-wrapper">
+                                <p class="h4 hero-detail-title">“What's for lunch?”</p>
+                                <div class="hero-bio-backstory pad-sm">
+                                    <p>Nick Merritt (call sign: N/A) has spent the last decade honing his skills as a Designer. He wears many hats, although that’s partly because his hair is thinning…so BACK OFF!</p>
+                                    <p>Curiosity may have killed the cat, but it has only made Nick a more well-rounded artist. Over the years, Nick has acquired many new skills using his patented &quot;Super Absorption&#0153;&quot; technique. These skills include: Visual Design, UX Design, Front-end Development, Branding, Motion Graphics, and Digital Painting to name a few.</p>
+                                    <p>But Nick’s greatest strength may be the fact that he’s still hungry for more knowledge. He is at his best when in an environment that encourages creativity and experimentation with new ideas and design skills. I’m sure, with access to the right resources, there is no limit to what Nick can achieve!</p>
+                                    <p>Did I mention that Nick likes games? Nick didn’t just grow up with video games, he was shaped by them throughout his childhood and well into his adulthood. They offered artistic inspiration, an escape into new worlds, and a way to connect with friends across the continent.</p>
+                                    <p>Nick would be a perfect addition to any team. He’s experienced, eager to learn, and passionate about gaming and design.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="media" class="outter u-white-background section-divider m-wings m-bottom-only hero-media" style="padding:0;">
+        <div class="inner" style="display:none;">
+            <div class="row">
+                <ul media-gallery="hero" class="media-gallery">
+                    <li media="tracer-preview" class="media-item">
+                        <div class="media-border"><a href="https://www.youtube.com/watch?v=zNq4nTA3eMg" target="_blank" style="background-image: url(https://blzgdapipro-a.akamaihd.net/media/thumbnail/tracer-preview.jpg)" title="Tracer Gameplay Preview" class="media-content m-video_youtube" data-analytics="youtube-video" data-analytics-placement="tracer-preview" data-yt-id="zNq4nTA3eMg"><h6 class="media-title">Tracer Gameplay Preview</h6></a></div>
+                    </li>
+                    <li media="tracer-gameplay" class="media-item">
+                        <div class="media-border"><a href="https://www.youtube.com/watch?v=_SvYmsNCWsw" target="_blank" style="background-image: url(https://blzgdapipro-a.akamaihd.net/media/thumbnail/tracer-gameplay.jpg)" title="Tracer Ability Overview" class="media-content m-video_youtube" data-analytics="youtube-video" data-analytics-placement="tracer-gameplay" data-yt-id="_SvYmsNCWsw"><h6 class="media-title">Tracer Ability Overview</h6></a></div>
+                    </li>
+                    <li media="tracer-wallpaper" class="media-item">
+                        <div class="media-border"><a href="https://blzgdapipro-a.akamaihd.net/media/wallpaper/tracer-wallpaper-wide.jpg" target="_blank" style="background-image: url(https://blzgdapipro-a.akamaihd.net/media/thumbnail/tracer-wallpaper.jpg)" title="Tracer" class="media-content m-wallpaper"><h6 class="media-title">Tracer</h6></a></div>
+                    </li>
+                    <li media="tracer-screenshot-002" class="media-item">
+                        <div class="media-border"><a href="https://blzgdapipro-a.akamaihd.net/media/screenshot/tracer-screenshot-002.jpg" target="_blank" style="background-image: url(https://blzgdapipro-a.akamaihd.net/media/thumbnail/tracer-screenshot-002.jpg)" title="Tracer" class="media-content m-img"><h6 class="media-title">Tracer</h6></a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="selectHeroes" class="outter">
+        <div class="inner">
+            <nav class="hero-select-navigation column row">
+                <h1 class="nav-title">What Other Heroes are Saying</h1>
+                <div class="hero-type-container">
+                    <h3 class="hero-select-title"><span class="heading-line"></span><span class="text">Offense</span><span class="heading-line"></span></h3>
+                    <ul class="js-hero-portrait-group u-align-center">
+                        <li class="hero-item">
+                            <span title="To not choose Nick would be a grave error in judgement." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/genji/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Genji</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="It's high noon. Time for Nick's lunch." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/mccree/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">McCree</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="Nick is my wingman." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/pharah/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Pharah</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="DIE! DIE!! DIE!!! Except Nick. He's cool." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/reaper/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Reaper</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="Nick is an army of one." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/soldier-76/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Soldier: 76</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="Cheers, Love! Nick is here!" class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/tracer/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Tracer</span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero-type-container">
+                    <h3 class="hero-select-title"><span class="heading-line"></span><span class="text">Defense</span><span class="heading-line"></span></h3>
+                    <ul class="js-hero-portrait-group u-align-center">
+                        <li class="hero-item">
+                            <span title="Beep Boop Nick Doo." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/bastion/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Bastion</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="Nick has the spirit of a dragon, and the agility of a hamster." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/hanzo/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Hanzo</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="Nick helped me find my passion for pyrotechnics." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/junkrat/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Junkrat</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="Nick once gifted me a snowglobe. How cliché." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/mei/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Mei</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="Nick has never once made fun of my height." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/torbjorn/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Torbjörn</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="I heard he can time travel." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/widowmaker/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Widowmaker</span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero-type-container">
+                    <h3 class="hero-select-title"><span class="heading-line"></span><span class="text">Tank</span><span class="heading-line"></span></h3>
+                    <ul class="js-hero-portrait-group u-align-center">
+                        <li class="hero-item">
+                            <span title="k thx bye!" class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/dva/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">D.Va</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="I don't crush Nick because I like him. I could...but I won't." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/reinhardt/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Reinhardt</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="Nick...he's what's for dinner." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/roadhog/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Roadhog</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="You realize Nick can't actually time travel, right?" class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/winston/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Winston</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="In Soviet Russia, Nick hires you!" class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/zarya/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Zarya</span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero-type-container">
+                    <h3 class="hero-select-title"><span class="heading-line"></span><span class="text">Support</span><span class="heading-line"></span></h3>
+                    <ul class="js-hero-portrait-group u-align-center">
+                        <li class="hero-item">
+                            <span title="Nick helped me set up my new VCR!" class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/ana/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Ana</span></a></li>
+                        <li class="hero-item">
+                            <span title="My 3 favorite things? Music, rollerblades, and Nick." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/lucio/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Lúcio</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="You need Nick, STAT!" class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/mercy/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Mercy</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="You should teleport Nick to headquarters right away." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/symmetra/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Symmetra</span></span>
+                        </li>
+                        <li class="hero-item">
+                            <span title="Nick resisted the urge to make a &quot;balls&quot; joke." class="tooltip hero-portrait m-color-inverted">
+                                <div class="wrap">
+                                    <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/zenyatta/icon-portrait.png&quot;)" class="image"></div>
+                                </div><span class="label">Zenyatta</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section id="footer" class="overwatch-footer section-divider m-top-only m-inset m-line u-align-center u-invert">
+        <section class="content-box">
+            <div class="row column"><a href="http://nick-merritt.com/#contact/" target="_blank" data-analytics="overwatch-buy" data-analytics-placement="Bottom" class="footer-prepurchase button m-lg">Hire Me</a></div>
+        </section>
+        <hr class="footer-rule">
+        <section class="content-box">
+            <div class="row column">
+                <h4 class="u-bigNoodleToo u-italics u-invert">Stay Connected</h4>
+                <div class="social-container">
+                    <a href="http://nick-merritt.com" target="_blank" class="social-icon-website"></a>
+                    <div class="social-icon-spacer"></div>
+                    <a href="https://www.linkedin.com/in/nmerritt" target="_blank" class="social-icon-linkedin"></a>
+                    <div class="social-icon-spacer"></div>
+                    <a href="https://dribbble.com/nickmerritt" target="_blank" class="social-icon-dribbble"></a>
+                </div>
+            </div>
+        </section>
+        <hr class="footer-rule">
+    </section>
+    <!--No community page on the japan site, go to homepage instead-->
+    <div class="bootstrap-footer">
+        <div class="footer row">
+            <div class="desktop-footer-container">
+                <div class="middle-container">
+                    
+                    <div class="footer-section clearfix bottom">
+                        <div class="links-section pull-left">
+                            <a href="http://us.blizzard.com/" data-analytics="global-nav" data-analytics-placement="Footer - Blizzard Logo">
+                                <div class="blizzard-logo"></div>
+                            </a>
+                        </div>
+                        <div class="pull-left company-info">
+                            <div class="footer-links pull-left">
+                                <ul>
+                                    <li><a href="http://nick-merritt.com/#about" target="_blank">About</a></li>
+                                    <li><a href="http://nick-merritt.com/#work" target="_blank">Portfolio</a></li>
+                                    <li><a href="http://nick-merritt.com/#contact" target="_blank">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright pull-left">©2016 Blizzard Entertainment, Inc. &amp; Nick Merritt</div>
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-wrapper clearfix">
+                                <a href="http://www.esrb.org/ratings/ratings_guide.jsp"><img src="https://bnetus-a.akamaihd.net/api/legal/static/images/legal/ratings/esrb/en/t.1qiE8.png"></a>
+                                <div class="descriptors-wrapper">
+                                    <div title="Depictions of blood." class="esrb-descriptor">Blood</div>
+                                    <div title="Scenes involving aggressive conflict. May contain bloodless dismemberment." class="esrb-descriptor">Violence</div>
+                                    <div title="The consumption of tobacco products." class="esrb-descriptor">Use of Tobacco</div>
+                                    <div class="esrb-descriptor">Online Interactions Not Rated by the ESRB</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-footer-container">  
+                <div class="footer-section clearfix">
+                    <div class="blizzard-logo">
+                        <a href="http://us.blizzard.com/"></a>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="http://nick-merritt.com/#about" target="_blank">About</a></li>
+                            <li><a href="http://nick-merritt.com/#work" target="_blank">Portfolio</a></li>
+                            <li><a href="http://nick-merritt.com/#contact" target="_blank">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">©2016 Blizzard Entertainment, Inc. &amp; Nick Merritt</div>
+                    <div class="ratings">
+                        <div class="rating-wrapper clearfix">
+                            <a href="http://www.esrb.org/ratings/ratings_guide.jsp"><img src="https://images.blz-contentstack.com/v3/assets/blt3d2b37a4c9c0ce28/blteda65bf57e501050/5cf6e294cf7aa6330ac66a99/t.424Bl.png" style="height: 74px;"></a>
+                            <div class="descriptors-wrapper">
+                                <div title="Depictions of blood." class="esrb-descriptor">Blood</div>
+                                <div title="Scenes involving aggressive conflict. May contain bloodless dismemberment." class="esrb-descriptor">Violence</div>
+                                <div title="The consumption of tobacco products." class="esrb-descriptor">Use of Tobacco</div>
+                                <div class="esrb-descriptor">Online Interactions Not Rated by the ESRB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        ! function(root) {
+            root.messages = {
+                "wallpaper": {
+                    "urlWide": {
+                        "title": "Wide",
+                        "dimensions": "(2560 x 1440)"
+                    },
+                    "urlStandard": {
+                        "title": "Standard",
+                        "dimensions": "(2048 x 1536)"
+                    },
+                    "urlTablet": {
+                        "title": "Tablet",
+                        "dimensions": "(2048 x 2048)"
+                    },
+                    "urlMobile": {
+                        "title": "Mobile",
+                        "dimensions": "(1080 x 1920)"
+                    },
+                    "urlFacebook": {
+                        "title": "Facebook",
+                        "dimensions": "(851 x 315)"
+                    },
+                    "urlTwitter": {
+                        "title": "Twitter",
+                        "dimensions": "(1500 x 500)"
+                    }
+                },
+                "img": {
+                    "hanzo": "https://overwatch-a.akamaihd.net/img/hanzo-sm-114f060a6cc9cc1597a8ef3707fa827be79e1d9bc96847d20fd01f810faad9d4b30f99a91505ad1512e7c7f5d1749595bed6ab8ed836441db9caee21352b760a.png"
+                }
+            }
+        }(this)
+    </script>
+    <script type="text/javascript" src="https://overwatch-a.akamaihd.net/vendor-f289138420786548cf60c08a1310642e8a2dd20c0cf15d798bd0104f3d8743532d801c14c50ef7faacf0a8e9811f8c72a3d8ad9441e47d29f2608edcc1f656b6.js"></script>
+    <script type="text/javascript" src="https://overwatch-a.akamaihd.net/blizzard-332ff96c4c071b6d1631a0b07ae25597d6ef5e0d071be1f25502131d5e312849af0306659496dc9006f6bb767e78b77418b44a32f1b45e766471713c79b85533.js"></script>
+    <script type="text/javascript" src="https://overwatch-a.akamaihd.net/app-c10c42327dcfb57a9a2b90bf0b9b3bfc750a970aab50cb411c500d499bbf7aeb105c21f35a7236b7608c62d0429cbf2892d6159126520a7f09aa520909f6f3a8.js"></script>
+    <script type="text/javascript">
+        ! function(root) {
+            root.svg4everybody({
+                polyfill: true
+            });
+            $('input').placeholder();
+
+            $(function() {
+                var $formInputs = $('#player-search input');
+                $formInputs.on('keyup', function(e) {
+                    if (e.keyCode === 13) {
+                        $formInputs.not(this).remove();
+                        $('#player-search').submit();
+                    }
+                });
+            });
+        }(this)
+    </script>
+    <script>
+        (function init() {
+            app.hero_details.init();
+        })();
+
+        ! function() {
+            var medias = [{
+                "id": "tracer-preview",
+                "name": "Tracer Gameplay Preview",
+                "category": "videos",
+                "tags": ["tracer"],
+                "thumbnail": "https://blzgdapipro-a.akamaihd.net/media/thumbnail/tracer-preview.jpg",
+                "content": {
+                    "type": "VIDEO_YOUTUBE",
+                    "videoYouTube": {
+                        "youtubeId": "zNq4nTA3eMg"
+                    }
+                },
+                "medium": {
+                    "href": "http://10.48.16.254:8080/api/data/overwatch/media/tracer-preview?auth=UYu3k4vrTKIjtIZZ69RNSYVgtvlpVIrt&namespace=prod"
+                }
+            }, {
+                "id": "tracer-gameplay",
+                "name": "Tracer Ability Overview",
+                "category": "videos",
+                "tags": ["tracer"],
+                "thumbnail": "https://blzgdapipro-a.akamaihd.net/media/thumbnail/tracer-gameplay.jpg",
+                "content": {
+                    "type": "VIDEO_YOUTUBE",
+                    "videoYouTube": {
+                        "youtubeId": "_SvYmsNCWsw"
+                    }
+                },
+                "medium": {
+                    "href": "http://10.48.16.254:8080/api/data/overwatch/media/tracer-gameplay?auth=UYu3k4vrTKIjtIZZ69RNSYVgtvlpVIrt&namespace=prod"
+                }
+            }, {
+                "id": "tracer-wallpaper",
+                "name": "Tracer",
+                "category": "wallpapers",
+                "tags": ["tracer"],
+                "thumbnail": "https://blzgdapipro-a.akamaihd.net/media/thumbnail/tracer-wallpaper.jpg",
+                "content": {
+                    "type": "WALLPAPER",
+                    "wallpaper": {
+                        "urlStandard": "https://blzgdapipro-a.akamaihd.net/media/wallpaper/tracer-wallpaper-standard.jpg",
+                        "urlWide": "https://blzgdapipro-a.akamaihd.net/media/wallpaper/tracer-wallpaper-wide.jpg",
+                        "urlTablet": "https://blzgdapipro-a.akamaihd.net/media/wallpaper/tracer-wallpaper-tablet.jpg",
+                        "urlMobile": "https://blzgdapipro-a.akamaihd.net/media/wallpaper/tracer-wallpaper-mobile.jpg",
+                        "urlFacebook": "https://blzgdapipro-a.akamaihd.net/media/wallpaper/tracer-wallpaper-facebook.jpg",
+                        "urlTwitter": "https://blzgdapipro-a.akamaihd.net/media/wallpaper/tracer-wallpaper-twitter.jpg"
+                    }
+                },
+                "medium": {
+                    "href": "http://10.48.16.254:8080/api/data/overwatch/media/tracer-wallpaper?auth=UYu3k4vrTKIjtIZZ69RNSYVgtvlpVIrt&namespace=prod"
+                }
+            }, {
+                "id": "tracer-screenshot-002",
+                "name": "Tracer",
+                "category": "screenshots",
+                "tags": ["tracer"],
+                "thumbnail": "https://blzgdapipro-a.akamaihd.net/media/thumbnail/tracer-screenshot-002.jpg",
+                "content": {
+                    "type": "IMG",
+                    "image": {
+                        "url": "https://blzgdapipro-a.akamaihd.net/media/screenshot/tracer-screenshot-002.jpg"
+                    }
+                },
+                "medium": {
+                    "href": "http://10.48.16.254:8080/api/data/overwatch/media/tracer-screenshot-002?auth=UYu3k4vrTKIjtIZZ69RNSYVgtvlpVIrt&namespace=prod"
+                }
+            }];
+            var gallery = overwatch.gallery.get('hero');
+            _.each(medias, function(media, key) {
+                gallery.add({
+                    data: media,
+                    id: media.id
+                });
+            });
+        }();
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51427145-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
