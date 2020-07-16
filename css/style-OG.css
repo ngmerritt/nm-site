@@ -478,15 +478,17 @@ section#about h2 {
   border: none;
   box-shadow: none;
 }
-.work-content .copy {
+.work-content h3,
+.work-content p,
+.work-content hr {
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
 }
-.work-content .copy p {
+.work-content p {
   padding: 10px 0;
 }
-.work-content .copy hr {
+.work-content hr {
   margin-bottom: 20px;
   border: none;
   border-bottom: 2px solid #e7e7e7;
