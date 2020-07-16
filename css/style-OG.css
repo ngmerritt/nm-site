@@ -631,6 +631,7 @@ section#about h2 {
 .details-container {
   padding-left: 0;
   list-style: none;
+  color: #372249;
 }
 .cs-info-li {
   display: -webkit-box;
@@ -643,7 +644,6 @@ section#about h2 {
 }
 .cs-info-label {
   width: 130px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   text-align: left;
 }
@@ -653,7 +653,6 @@ section#about h2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .project-summary {
