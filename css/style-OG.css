@@ -126,6 +126,14 @@ p a:hover {
   color: #DB6127;
 }
 
+p.alert {
+  background: #db6127;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
 img {
   width: 100%;
 }
