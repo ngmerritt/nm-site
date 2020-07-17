@@ -128,8 +128,8 @@ p a:hover {
 
 p.alert {
   background: #17bf6a;
-  color: #fff;
-  padding: 15px;
+  color: #fff !important;
+  padding: 15px !important;
   border-radius: 5px;
   font-size: 15px;
 }
