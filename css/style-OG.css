@@ -126,6 +126,14 @@ p a:hover {
   color: #DB6127;
 }
 
+.work-content p a {
+  color: rgba(217, 95, 39, 0.7);
+}
+
+.work-content p a:hover {
+  color: rgba(217, 95, 39, 1);
+}
+
 p.alert {
   background: #17bf6a;
   color: #fff !important;
