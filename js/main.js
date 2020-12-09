@@ -417,7 +417,7 @@ jQuery(document).ready(function($) {
       var current = nextProject;
       nextProject++;
 
-      if (nextProject > 6) {
+      if (nextProject > 8) {
         nextProject = 1;
       }
 
@@ -425,3 +425,7 @@ jQuery(document).ready(function($) {
     });
 
 });//END DOCUMENT READY
+
+$(document).ready(function () {
+  $('div#load-overlay').fadeOut(1000);
+});
