@@ -531,7 +531,8 @@ section#about h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  width: 25%;
+  /* width: 25%; */
+  width: calc(100% / 3);
   padding-top: 20%;
   flex: 0 1 auto;
   position: relative;
