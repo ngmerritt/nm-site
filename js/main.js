@@ -37,6 +37,7 @@ jQuery(document).ready(function($) {
 
   var thumb = $(".thumb"),
       back = $(".back-arrow"),
+      work = $("#back"),
       slide = $(".work-slider"),
       cs = $(".work-content");
       // position = $(".work-slider").css("left");
@@ -45,6 +46,11 @@ jQuery(document).ready(function($) {
     thumb.click(function() {
       slide.addClass('work-slidden');
       cs.show();
+    });
+
+    work.click(function() {
+      slide.removeClass('work-slidden');
+      cs.hide(600);
     });
 
     back.click(function() {
