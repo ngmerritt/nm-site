@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
 
   var thumb = $(".thumb"),
       back = $(".back-arrow"),
-      work = $("#back"),
+      work = $(".return"),
       slide = $(".work-slider"),
       cs = $(".work-content");
       // position = $(".work-slider").css("left");
