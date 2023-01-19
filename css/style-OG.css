@@ -1395,6 +1395,11 @@ textarea {
     margin: 0;
     box-shadow: none;
   }
+  .thumb-overlay span {
+    margin: 35px auto 0;
+    text-align: center;
+    font-size: 23px;
+  }
   .content {
     margin-top: 150px;
   }
