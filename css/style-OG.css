@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Exo:200,500,700,800|Teko:400');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,500;1,200&family=Teko:wght@300;400&display=swap');
 
 *, * a, span, body, html {
   list-style: none;
@@ -34,7 +35,8 @@ body {
 h1 {
   color: #fff;
   font-family: 'Teko', sans-serif;
-  font-weight: 400;
+  /* font-family: 'Abel', sans-serif; */
+  font-weight: 300;
   font-size: 100px;
   /*font-size: calc(2.5em + 3vw);*/
   letter-spacing: 2px;
@@ -45,15 +47,17 @@ h1 {
 }
 h1:after {
   content: "";
-  background: rgba(217, 95, 39, 1);
+  /* background: rgba(217, 95, 39, 1); */
+  background: rgb(235 143 100);
   width: 100%;
   height: 1px;
   position: absolute;
   bottom: 0;
   left: 0;
-  box-shadow:
+  /* box-shadow:
     0 5px 0 0 rgba(217, 95, 39, 0.6),
-    0 10px 0 0 rgba(217, 95, 39, 0.3);
+    0 10px 0 0 rgba(217, 95, 39, 0.3); */
+  box-shadow: 0 0 10px 1px rgb(217 95 39 / 80%);
 }
 h1 span {
   color: #fff;
@@ -69,7 +73,7 @@ h1 span {
 
 h2 {
   color: #372249;
-  font-family: 'Exo', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-weight: 400;
   font-size: 40px;
   /*font-size: calc(2.5em + 3vw);*/
@@ -85,15 +89,17 @@ h2 {
 }
 h2:after {
   content: "";
-  background: rgba(217, 95, 39, 1);
+  /* background: rgba(217, 95, 39, 1); */
+  background: rgb(235 143 100);
   width: 100%;
   height: 1px;
   position: absolute;
   bottom: 0;
   left: -5px;
-  box-shadow:
+  /* box-shadow:
     0 5px 0 0 rgba(217, 95, 39, 0.6),
-    0 10px 0 0 rgba(217, 95, 39, 0.3);
+    0 10px 0 0 rgba(217, 95, 39, 0.3); */
+  box-shadow: 0 0 10px 1px rgb(217 95 39 / 80%);
 }
 
 h3 {
@@ -250,25 +256,27 @@ nav ul li {
   margin-left: 45px;
   position: relative;
   font-size: 17px;
-  font-family: 'Exo', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   /*padding: 15px;*/
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.8);
 }
 
 nav ul li:after {
   content: "";
-  background: rgba(217, 95, 39, 1);
+  /* background: rgba(217, 95, 39, 1); */
+  background: rgb(235 143 100);
   width: 100%;
   height: 1px;
   opacity: 0;
   position: absolute;
   bottom: -20px;
   left: 0;
-  box-shadow:
+  /* box-shadow:
     0 5px 0 0 rgba(217, 95, 39, 0.6),
-    0 10px 0 0 rgba(217, 95, 39, 0.3);
+    0 10px 0 0 rgba(217, 95, 39, 0.3); */
+  box-shadow: 0 0 10px 1px rgb(217 95 39 / 80%);
 
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
@@ -285,7 +293,7 @@ nav ul li:hover:after {
 
 .content {
   width: 100%;
-  max-width: 1020px;
+  max-width: 1120px;
   margin: auto;
   padding: 0 30px;
 }
@@ -302,7 +310,7 @@ nav ul li:hover:after {
   border-style: none;
   border-radius: 0px;
   padding: 20px 10px;
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.2);
   position: relative;
   text-align: center;
@@ -465,7 +473,7 @@ section h2 {
 
 section#about h2 {
   color: #fff;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.8);
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.8);
 }
 
 .work-slider {
@@ -491,7 +499,7 @@ section#about h2 {
 
 .work-thumbs, .work-content {
   width: 100%;
-  max-width: 960px;
+  max-width: 1060px;
   margin: 0 auto;
 }
 
@@ -757,7 +765,7 @@ ol li {
 
 .about-wrap, .contact-wrap {
   width: 100%;
-  max-width: 1020px;
+  max-width: 1120px;
   padding: 0 30px;
   margin: 0 auto;
 }
@@ -770,7 +778,7 @@ ol li {
 }
 
 .profile-pic {
-  width: 30%;
+  width: 32%;
   padding-top: 35%;
   background: url(../img/nick-hawaii.jpg) no-repeat;
   background-size: cover;
@@ -866,7 +874,7 @@ span.visit-site a:hover {
 
 .new-skills {
   list-style: none;
-  margin: 30px 0;
+  margin: 15px 0 30px;
   padding: 0 5px 0 30px;
   width: 100%;
   color: #fff;
@@ -882,18 +890,20 @@ ul.new-skills li {
 
 ul.new-skills li:before {
   content: "";
-  width: 7px;
-  height: 7px;
-  border: 1px solid rgba(255,255,255, 0.5);
-  background: rgba(217, 95, 39, 1);
+  background-image: url('../img/nm-star-bullet-glow.svg');
+  background-size: 16px 16px;
+  width: 16px;
+  height: 16px;
+  /* border: 1px solid rgba(255,255,255, 0.5);
+  background: rgba(217, 95, 39, 1); */
   /* transform: skew(-45deg); */
   position: absolute;
   left: -25px;
-  top: 10px;
+  top: 7px;
 }
 
-.skills-left, .skills-right {
-  width: 48%;
+.skills-col {
+  width: 32%;
   flex: 0 1 auto;
 }
 
@@ -1420,7 +1430,7 @@ textarea {
   .profile-text {
     width: 100%;
   }
-  .skills-left, .skills-right {
+  .skills-col {
     width: 100%;
   }
   .work-content {
