@@ -568,14 +568,14 @@ section#about h2 {
 }
 ol li {
   color: #372249;
-  list-style: disc;
+  list-style: decimal;
   margin: 0 0 10px 30px;
   line-height: 24px;
   font-style: italic;
 }
 .work-content ul li {
   color: #372249;
-  list-style: decimal;
+  list-style: disc;
   margin: 0 0 10px 30px;
   line-height: 24px;
   font-style: italic;
