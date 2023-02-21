@@ -560,7 +560,7 @@ section#about h2 {
   margin-right: auto;
   list-style-type: decimal;
 }
-ol li, ul li {
+ol li, .work-content ul li {
   color: #372249;
   list-style: decimal;
   margin: 0 0 10px 30px;
