@@ -554,13 +554,26 @@ section#about h2 {
   border: none;
   border-bottom: 2px solid #e7e7e7;
 }
-.work-content ol, .work-content ul {
+.work-content ol {
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
   list-style-type: decimal;
 }
-ol li, .work-content ul li {
+.work-content ul {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: disc;
+}
+ol li {
+  color: #372249;
+  list-style: disc;
+  margin: 0 0 10px 30px;
+  line-height: 24px;
+  font-style: italic;
+}
+.work-content ul li {
   color: #372249;
   list-style: decimal;
   margin: 0 0 10px 30px;
