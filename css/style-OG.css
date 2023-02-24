@@ -121,8 +121,8 @@ h3 span.sub {
 p {
   text-align: left;
   text-transform: none;
-  font-size: 17px;
-  line-height: 1.4em;
+  font-size: 18px;
+  line-height: 1.5em;
   margin: 0 0 15px 0;
 }
 p a {
@@ -576,19 +576,21 @@ section#about h2 {
   margin-right: auto;
   list-style-type: disc;
 }
-ol li {
+.work-content ol li {
   color: #372249;
   list-style: decimal;
   margin: 0 0 10px 30px;
-  line-height: 24px;
+  line-height: 1.5em;
   font-style: italic;
+  font-size: 18px;
 }
 .work-content ul li {
   color: #372249;
   list-style: disc;
   margin: 0 0 10px 30px;
-  line-height: 24px;
+  line-height: 1.5em;
   font-style: italic;
+  font-size: 18px;
 }
 
 .thumb-wrap {
