@@ -40,13 +40,12 @@ h1 {
   font-size: 120px;
   /*font-size: calc(2.5em + 3vw);*/
   letter-spacing: 3px;
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
   padding-bottom: 20px;
   text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.8);
   position: relative;
   width: 100%;
   /* text-transform: uppercase; */
-  line-height: 1.2em;
 }
 h1:after {
   content: "";
