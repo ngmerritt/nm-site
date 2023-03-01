@@ -37,6 +37,7 @@ jQuery(document).ready(function($) {
 
   var thumb = $(".thumb"),
       back = $(".back-arrow"),
+      work = $(".return"),
       slide = $(".work-slider"),
       cs = $(".work-content");
       // position = $(".work-slider").css("left");
@@ -45,6 +46,11 @@ jQuery(document).ready(function($) {
     thumb.click(function() {
       slide.addClass('work-slidden');
       cs.show();
+    });
+
+    work.click(function() {
+      slide.removeClass('work-slidden');
+      cs.hide(600);
     });
 
     back.click(function() {
@@ -417,7 +423,7 @@ jQuery(document).ready(function($) {
       var current = nextProject;
       nextProject++;
 
-      if (nextProject > 8) {
+      if (nextProject > 10) {
         nextProject = 1;
       }
 
@@ -425,3 +431,7 @@ jQuery(document).ready(function($) {
     });
 
 });//END DOCUMENT READY
+
+$(document).ready(function () {
+  $('div#load-overlay').fadeOut(1000);
+});

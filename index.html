@@ -14,14 +14,15 @@
   <meta name="apple-touch-fullscreen" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-  <title>Nick Merritt | Visual &amp; UX Designer</title>
+  <title>Nick Merritt | Art Director &amp; Product Designer</title>
   <script src="js/modernizr.js"></script>
   <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-  <link rel="stylesheet" href="css/style-OG.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
+<div id="load-overlay" style="position: fixed; width: 100vw; height: 100vh; top: 0; left: 0; right: 0; bottom: 0; background: #17141C; z-index: 10000;"></div>
 <span style="display: none;" id="top"></span>
 
 <!-- PARALLAX -->
@@ -40,14 +41,15 @@
   </div>
   <div class="layer flex" data-depth="0">
     <div class="content">
-      <h1 id="h1-fit">Hello, my name is <span id="h1-fit">Nick Merritt.</span></h1>
-      <h3 id="h3-fit">I'm a Design Manager with over a decade of experience specializing in Art Direction, Branding, and Visual Design.
+      <span id="eb-fit" class="eyebrow">Hello!👋 My name is</span>
+      <h1 id="h1-fit">Nick&nbsp;Merritt</h1>
+      <h3 id="h3-fit">Passionately curious and driven by empathy and collaboration, I've spent the last 15 years leading design teams, crafting brands, and building interactive products and experiences.
       <div class="main-btns flex">
-        <a href="#work" class="button btn-primary flex-2">
+        <a href="#work" class="button btn-primary flex-2 return">
           <div class="icon icon-scope"></div>
           <span>View My Work</span>
         </a>
-        <a href="http://nick-merritt.com/Nick-Merritt-RESUME-2016.pdf" target="_blank" class="button btn-secondary flex-1">
+        <a href="http://nick-merritt.com/Nick-Merritt-RESUME-2023b.pdf" target="_blank" class="button btn-secondary flex-1">
           <div class="icon icon-resume"></div>
           <span>Resume</span>
         </a>
@@ -69,23 +71,71 @@
         <h2 class="section-title">My Work</h2>
         <div class="thumb-wrap">
           
-          <div class="thumb" data-url="work/project-1" style="background-image: url('work/img/co-opcritics/cc-01.jpg');">
+          <div class="thumb" data-url="work/project-1" style="background-image: url('work/img/nzxt/nzxt-keyboard-config.png');">
+            <div class="thumb-overlay">
+              <div class="icon-zoom"></div>
+              <div class="thumb-text">
+                <span>NZXT Configurators</span>
+              </div>
+            </div>
+          </div>
+          <div class="thumb" data-url="work/project-2" style="background-image: url('work/img/nzxt/nzxt-cover-image1.jpg');">
+            <div class="thumb-overlay">
+              <div class="icon-zoom"></div>
+              <div class="thumb-text">
+                <span>NZXT Overview</span>
+              </div>
+            </div>
+          </div>
+          <div class="thumb" data-url="work/project-3" style="background-image: url('work/img/mind/mind-01.png');">
+            <div class="thumb-overlay">
+              <div class="icon-zoom"></div>
+              <div class="thumb-text">
+                <span>MIND</span>
+              </div>
+            </div>
+          </div>
+          <div class="thumb" data-url="work/project-4" style="background-image: url('work/img/stmath/stmath-01b.jpg');">
+            <div class="thumb-overlay">
+              <div class="icon-zoom"></div>
+              <div class="thumb-text">
+                <span>ST Math</span>
+              </div>
+            </div>
+          </div>
+          <div class="thumb" data-url="work/project-5" style="background-image: url('work/img/sots/sots-01.jpg');">
+            <div class="thumb-overlay">
+              <div class="icon-zoom"></div>
+              <div class="thumb-text">
+                <span>South of the Sahara</span>
+              </div>
+            </div>
+          </div>
+          <div class="thumb" data-url="work/project-6" style="background-image: url('work/img/online-products/op-cover.jpg');">
+            <div class="thumb-overlay">
+              <div class="icon-zoom"></div>
+              <div class="thumb-text">
+                <span>MIND Online Products</span>
+              </div>
+            </div>
+          </div>
+          <div class="thumb" data-url="work/project-7" style="background-image: url('work/img/print/print-cover.jpg');">
+            <div class="thumb-overlay">
+              <div class="icon-zoom"></div>
+              <div class="thumb-text">
+                <span>MIND Print &amp;<br>Event Graphics</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="thumb" data-url="work/project-6" style="background-image: url('work/img/co-opcritics/cc-01.jpg');">
             <div class="thumb-overlay">
               <div class="icon-zoom"></div>
               <div class="thumb-text">
                 <span>Co-Op Critics</span>
               </div>
             </div>
-          </div>
-          <div class="thumb" data-url="work/project-2" style="background-image: url('work/img/hopegrid/hg-02.jpg');">
-            <div class="thumb-overlay">
-              <div class="icon-zoom"></div>
-              <div class="thumb-text">
-                <span>HopeGrid</span>
-              </div>
-            </div>
-          </div>
-          <div class="thumb" data-url="work/project-3" style="background-image: url('work/img/kitbash/kb-01.jpg');">
+          </div> -->
+          <div class="thumb" data-url="work/project-8" style="background-image: url('work/img/kitbash/kb-01.jpg');">
             <div class="thumb-overlay">
               <div class="icon-zoom"></div>
               <div class="thumb-text">
@@ -93,7 +143,7 @@
               </div>
             </div>
           </div>
-          <div class="thumb" data-url="work/project-4" style="background-image: url('work/img/triumph/t-02.jpg');">
+          <div class="thumb" data-url="work/project-9" style="background-image: url('work/img/triumph/t-01.jpg');">
             <div class="thumb-overlay">
               <div class="icon-zoom"></div>
               <div class="thumb-text">
@@ -101,23 +151,15 @@
               </div>
             </div>
           </div>
-          <div class="thumb" data-url="work/project-5" style="background-image: url('work/img/wisemanbray/wb-01.jpg');">
+          <!-- <div class="thumb" data-url="work/project-8" style="background-image: url('work/img/wisemanbray/wb-01.jpg');">
             <div class="thumb-overlay">
               <div class="icon-zoom"></div>
               <div class="thumb-text">
                 <span>Wiseman Bray</span>
               </div>
             </div>
-          </div>
-          <div class="thumb" data-url="work/project-6" style="background-image: url('work/img/personal/nm-01.jpg');">
-            <div class="thumb-overlay">
-              <div class="icon-zoom"></div>
-              <div class="thumb-text">
-                <span>Personal Site</span>
-              </div>
-            </div>
-          </div>
-          <div class="thumb" data-url="work/project-7" style="background-image: url('work/img/logos/logos-02.jpg');">
+          </div> -->
+          <div class="thumb" data-url="work/project-10" style="background-image: url('work/img/logos/logos-02.jpg');">
             <div class="thumb-overlay">
               <div class="icon-zoom"></div>
               <div class="thumb-text">
@@ -125,14 +167,7 @@
               </div>
             </div>
           </div>
-          <div class="thumb" data-url="work/project-8" style="background-image: url('work/img/other/other-01.jpg');">
-            <div class="thumb-overlay">
-              <div class="icon-zoom"></div>
-              <div class="thumb-text">
-                <span>Other Stuff</span>
-              </div>
-            </div>
-          </div>
+    
         </div>
         <div class="more-work-btns flex">
             <a href="https://dribbble.com/nickmerritt" target="_blank" class="button btn-primary flex-1">
@@ -166,116 +201,46 @@
   <div class="about-wrap">
     <h2 class="section-title">About Me</h2>
     <div class="profile">
-      <div class="profile-pic"></div>
+      <div class="profile-pic">
+        <!-- <span>My wife and me in Hawaii</span> -->
+      </div>
       <div class="profile-text">
-        <p>Hi there! I'm a Design Manager with over 13 years experience in Branding, Graphic Design, and Web Design / Development. I love solving problems and empowering design teams to reach their full potential.</p>
+        <p>Hi there! I’m a <a href="https://www.mockplus.com/blog/post/full-stack-designer" target="_blank">Full-Stack Designer</a>🦄 who has spent the last 15 years honing my craft. I’m looking for a collaborative environment where I can partner with cross-disciplinary teams to create designs that are user-centered and data-driven. My hope is to create user experiences that make a difference while working for a company whose mission I believe&nbsp;in.</p>
 
-        <p>I'm constantly challenging myself to learn new skills to be able to adapt and grow with current trends and best practices. Below, you'll see a list of my skills and expertise.</p>
+        <p>In addition to my design background, I'm also a lifelong gamer🎮, a musician🥁, I love all things Space🚀 (see this website), and I'm addicted to learning new things! Having multiple creative outlets to explore helps keep me inspired and innovative!</p>
 
-        <p>I would love to hear from you! If you're interested in learning more, please <a href="#contact">contact me</a> or <a href="http://nick-merritt.com/Nick-Merritt-RESUME-2016.pdf" target="_blank">download my résumé.</a></p>
+        <p>If you're interested in learning more, please <a href="#contact">contact me</a> or <a href="http://nick-merritt.com/Nick-Merritt-RESUME-2023b.pdf" target="_blank">download my résumé.</a></p>
       </div>
     </div>
     <div class="skills">
-      <div class="skills-left">
-        <h3>Experience</h3>
-        <ul class="skills" title="Visual Design">
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li></li>
-        </ul>
-        <ul class="skills" title="UI &amp; UX Design">
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <ul class="skills" title="Front-end Development">
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <ul class="skills" title="Video &amp; Motion Graphics">
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+      <div class="skills-col">
+        <h3>Design Skills</h3>
+        <ul class="new-skills">
+          <li>UX / UI Design</li>
+          <li>Interaction Design</li>
+          <li>Prototyping</li>
+          <li>Design Systems</li>
+          <li>Art Direction</li>
         </ul>
       </div>
-      <div class="skills-right">
+      <div class="skills-col">
         <h3>Technical Skills</h3>
-        <ul class="skills" title="Photoshop / Illustrator">
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
+        <ul class="new-skills">
+          <li>Figma / Sketch</li>
+          <li>Adobe Creative Suite</li>
+          <li>Framer / Webflow</li>
+          <li>HTML / CSS / JavaScript</li>
+          <li>Dato / HubSpot / Wordpress</li>
         </ul>
-        <ul class="skills" title="HTML / CSS / JavaScript">
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <ul class="skills" title="Axure / InVision / Adobe XD">
-          <li class="full"></li>
-          <li class="full"></li>
-          <li class="full"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <ul class="skills" title="After Effects / Flash">
-          <li class="full"></li>
-          <li class="full"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+      </div>
+      <div class="skills-col">
+        <h3>Soft Skills</h3>
+        <ul class="new-skills">
+          <li>Leadership & Mentorship</li>
+          <li>User Empathy & Advocacy</li>
+          <li>Communication</li>
+          <li>Problem Solving</li>
+          <li>Adaptability</li>
         </ul>
       </div>
       
@@ -288,7 +253,7 @@
   <div class="contact-wrap">
     <h2 class="section-title">Get In Touch</h2>
     <div class="form-wrap">
-      <form id="contact-form" class="form" method="POST" role="form" data-netlify="true">
+      <form id="contact-form" class="form" method="POST" role="form" data-netlify="true" data-netlify-recaptcha="true">
           <div class="form-group">
               <label class="form-label" for="name">Your Name</label>
               <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
@@ -300,6 +265,8 @@
           <div class="form-group">
               <label class="form-label" for="message">Message</label>
               <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>                                 
+          </div>
+          <div class="form-group" data-netlify-recaptcha="true">
           </div>
           <div class="text-center">
               <button type="submit" class="btn btn-start-order">Send Message</button>
@@ -353,7 +320,7 @@
         </svg>
       </li></a>
     </ul>
-    <span class="footer-text">&copy; Copyright 2017-2020 Nick Merritt &mdash; <a href="http://nick-merritt.com/Nick-Merritt-RESUME-2016.pdf">Download Resume</a></span>
+    <span class="footer-text">&copy; Copyright 2016-2023 Nick Merritt &mdash; <a href="http://nick-merritt.com/Nick-Merritt-RESUME-2023b.pdf" target="_blank">Download Resume</a></span>
   </div>
 </section>
 </div><!--END MAIN CONTAINER-->
@@ -371,7 +338,7 @@
     </svg>
   </div></a>
   <ul class="menu flex">
-    <a href="#work"><li>Work</li></a>
+    <a class="return" href="#work"><li>Work</li></a>
     <a href="#about"><li>About</li></a>
     <a href="#contact"><li>Contact</li></a>
   </ul>
@@ -380,14 +347,16 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/particles.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
 <script src="js/jquery.parallax.min.js"></script>
 <script src="js/jquery.fittext.js"></script>
 <script src="js/contact.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 
 <script>
-  $("#h1-fit").fitText(0.7, { minFontSize: '50px', maxFontSize: '100px' });
-  $("#h3-fit").fitText(1.7, { minFontSize: '20px', maxFontSize: '31px' });
+  $("#h1-fit").fitText(0.8, { minFontSize: '20px', maxFontSize: '100px' });
+  $("#h3-fit").fitText(1.7, { minFontSize: '17px', maxFontSize: '31px' });
+  $("#eb-fit").fitText(1.7, { minFontSize: '20px', maxFontSize: '55px' });
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
